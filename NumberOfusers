@@ -1,0 +1,3 @@
+
+SELECT count(cv.email) FROM cv_user as cv;
+

@@ -1,0 +1,5 @@
+
+SELECT COUNT(cv.email) FROM cv_user as cv
+INNER JOIN subscription as subs ON cv.id = subs.user_id
+WHERE cv.utm_source = 'baidu';
+

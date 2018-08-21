@@ -1,0 +1,5 @@
+
+SELECT COUNT(cv.id) FROM cv_user as cv
+INNER JOIN subscription as subs ON cv.id = subs.user_id
+WHERE (cv.utm_source = 'google' AND subs.status = 'Archived');
+/* Recordar el tema de las mayúsculas y minúsculas */

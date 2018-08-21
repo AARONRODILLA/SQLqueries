@@ -1,0 +1,1 @@
+SELECT COUNT (subscription_id) FROM payment WHERE (recurrency_number >= 2) AND (paid_at BETWEEN '2018-05-01' AND '2018-05-31' );

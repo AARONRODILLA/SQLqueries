@@ -1,0 +1,1 @@
+SELECT COUNT(email) FROM cv_user WHERE (registered_at BETWEEN '2018-07-01' AND '2018-07-31') AND ("domain" = '.resumecoach.com');

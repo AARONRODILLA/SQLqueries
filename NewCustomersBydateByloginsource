@@ -1,0 +1,1 @@
+SELECT COUNT ("id") FROM cv_user WHERE registered_provider = 'cognito' AND (registered_at BETWEEN '2018-07-01' AND '2018-07-31');
