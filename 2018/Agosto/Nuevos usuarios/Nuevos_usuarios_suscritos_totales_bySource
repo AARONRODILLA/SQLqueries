@@ -1,0 +1,3 @@
+SELECT COUNT('id') FROM cv_user as cv
+INNER JOIN subscription ON cv.id = subscription.user_id
+WHERE (cv.utm_source = 'google') AND (cv.registered_at BETWEEN '01-08-2018' AND '04-08-2018'); 

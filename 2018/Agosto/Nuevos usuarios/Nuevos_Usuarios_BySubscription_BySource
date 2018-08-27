@@ -1,0 +1,16 @@
+SELECT COUNT('id') FROM cv_user as cv
+INNER JOIN subscription as sub ON cv.id = sub.user_id
+WHERE (cv.utm_source = 'google') 
+       AND (cv.registered_at BETWEEN '01-08-2018' AND '04-08-2018') 
+	   AND (sub.status = 'Active')
+	   AND (sub.product_id = '68bb403b-a111-462b-8d22-5adfa9bc05ff';
+			
+/* La tabla de equivalencias de los product_id es:
+			- Premium con 14 días primero -> 68bb403b-a111-462b-8d22-5adfa9bc05ff
+			- Premium ilimatada (único pago) -> 04eb46d5-3391-4b89-a465-aee2dff9b9bb
+			- Limited con 14 días primero -> 996ef9e3-b068-464f-8140-50644a79565e
+			*/
+
+
+
+
